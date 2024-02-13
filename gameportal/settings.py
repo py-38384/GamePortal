@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-^7!%0*c54ff^_7gjp*42k=!d1c6n0fh_ct=y%71!@(p8m^b#0i
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*.vercel.app']
+ALLOWED_HOSTS = ['game-portal-azure.vercel.app']
 
 
 # Application definition
