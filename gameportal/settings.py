@@ -28,7 +28,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['game-portal-azure.vercel.app']
+ALLOWED_HOSTS = ['game-portal-azure.vercel.app','127.0.0.1']
 
 
 # Application definition

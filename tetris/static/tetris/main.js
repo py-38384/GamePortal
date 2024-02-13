@@ -418,22 +418,22 @@ window.addEventListener('keydown', e => {
   switch (e.key) {
     case 'W':
     case 'w':
-        topBtn();
+        topBtn(document.createElement('div'));
       break;
     case 'A':
     case 'a':
-        leftBtn();
+        leftBtn(document.createElement('div'));
       break;
     case 'D':
     case 'd':
-        rightBtn();
+        rightBtn(document.createElement('div'));
       break;
     case 'S':
     case 's':
-        bottomBtn();
+        bottomBtn(document.createElement('div'));
       break;
     case " ":
-        pauseGame();
+        pauseGame(document.createElement('div'));
       break;
     default:
       break;
