@@ -1,0 +1,33 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block title %}Snakysrufs - by piyal hossein{% endblock title %}
+{% block staticfileslinks %}
+<link rel="stylesheet" href="{% static 'tetris/style.css' %}">
+<script>
+const bg = new Audio("{% static 'tetris/audio/bg.mp3' %}");
+const scoreMusic = new Audio("{% static 'tetris/audio/score.mp3' %}");
+const gameOverMusic = new Audio("{% static 'tetris/audio/gameover.mp3' %}");
+</script>
+{% endblock staticfileslinks %}
+{% block container %}
+<body>
+    <div id='displayBoard'></div>
+    <div id='notice'></div>
+    <div class="score-div">
+        <div class="score-container">
+        <div id='scoreBoard'></div>
+        <div id='highScoreBoard'></div>
+        </div>
+    </div>
+    <div class="button-wrapper">
+        <div id='buttons'>
+        <button id='left' class='button' onclick="leftBtn(this)"></button>
+        <button id='top' class='button' onclick="topBtn(this)"></button>
+        <button id='stopBtn' class='button' onclick="pauseGame(this)"></button>
+        <button id='right' class='button' onclick="rightBtn(this)"></button>
+        <button id='bottom' class='button' onclick="bottomBtn(this)"></button>
+        </div>
+    </div>
+    <script src="{% static 'tetris/main.js'%}"></script>
+</body>
+{% endblock container %}

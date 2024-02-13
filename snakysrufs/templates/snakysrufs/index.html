@@ -1,0 +1,31 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block title %}Snakysrufs - by piyal hossein{% endblock title %}
+{% block staticfileslinks %}
+<link rel="stylesheet" href="{% static 'snakysrufs/style.css' %}">
+<script>
+const bgSound = new Audio("{% static 'snakysrufs/audio/bg.mp3' %}");
+const foodSound = new Audio("{% static 'snakysrufs/audio/food.mp3' %}");
+const gameOverSound = new Audio("{% static 'snakysrufs/audio/gameOver.mp3' %}");
+</script>
+{% endblock staticfileslinks %}
+{% block container %}
+<body>
+  <div id='displayBoard'></div>
+  <div id='notice'></div>
+  <div class="score-wrapper">
+    <div id='scoreBoard'></div>
+    <div id='highScoreBoard'></div>
+  </div>
+  <div class="button-wrapper">
+    <div id='buttons'>
+      <button id='left' class='button' onclick="leftBtn(this)"></button>
+      <button id='top' class='button' onclick="topBtn(this)"></button>
+      <button id='stopBtn' class='button' onclick="pauseGame(this)"></button>
+      <button id='right' class='button' onclick="rightBtn(this)"></button>
+      <button id='bottom' class='button' onclick="bottomBtn(this)"></button>
+    </div>
+  </div>
+  <script src="{% static 'snakysrufs/main.js' %}"></script>
+</body>
+{% endblock container %}

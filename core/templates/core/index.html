@@ -1,0 +1,14 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block staticfileslinks %}
+<link rel="stylesheet" href="{% static 'core/style.css' %}">
+{% endblock staticfileslinks %}
+{% block container %}
+<div class="container">
+    <h1>Welcome to game portal</h1>
+    <div class="game-container">
+        <a href="{% url 'tetris' %}">Play Tetris</a><br>
+        <a href="{% url 'snakysrufs' %}">Play Snakysrufs</a>
+    </div>
+</div>
+{% endblock container %}
