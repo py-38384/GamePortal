@@ -19,6 +19,7 @@ body{
     font-optical-sizing: auto;
     font-weight: 547;
     font-style: normal;
+    text-align: center;
 }
 .container .game-container{
     display: flex;
